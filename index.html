@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zahracandle | شمع‌های دست‌ساز</title>
+
+<style>
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family:Tahoma,Arial,sans-serif;
+  background:#fffaf7;
+  color:#3d302b;
+  line-height:1.8;
+}
+
+header{
+  position:sticky;
+  top:0;
+  z-index:100;
+  background:rgba(255,250,247,.96);
+  border-bottom:1px solid #eaded7;
+  padding:16px 7%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{
+  font-size:27px;
+  font-weight:bold;
+  color:#8b5e4b;
+}
+
+nav a{
+  text-decoration:none;
+  color:#4d3c35;
+  margin-right:24px;
+  font-size:15px;
+}
+
+nav a:hover{
+  color:#b77b5d;
+}
+
+.hero{
+  min-height:82vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:70px 20px;
+  background:linear-gradient(135deg,#fff7f2,#f8ebe3);
+}
+
+.hero h1{
+  font-size:48px;
+  color:#6f4939;
+  margin-bottom:20px;
+}
+
+.hero p{
+  font-size:19px;
+  max-width:650px;
+  margin:auto;
+  color:#6d5a52;
+}
+
+.button{
+  display:inline-block;
+  margin-top:30px;
+  padding:13px 30px;
+  border-radius:30px;
+  background:#9b6a53;
+  color:white;
+  text-decoration:none;
+  transition:.3s;
+}
+
+.button:hover{
+  background:#704938;
+  transform:translateY(-2px);
+}
+
+section{
+  padding:75px 7%;
+}
+
+.title{
+  text-align:center;
+  font-size:32px;
+  color:#6f4939;
+  margin-bottom:45px;
+}
+
+.products{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:25px;
+}
+
+.card{
+  background:white;
+  border-radius:22px;
+  padding:25px;
+  text-align:center;
+  box-shadow:0 8px 25px rgba(90,60,45,.08);
+  border:1px solid #f0e3dc;
+  transition:.3s;
+}
+
+.card:hover{
+  transform:translateY(-7px);
+  box-shadow:0 14px 30px rgba(90,60,45,.13);
+}
+
+.icon{
+  height:170px;
+  border-radius:18px;
+  background:#f8eee8;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:75px;
+  margin-bottom:20px;
+}
+
+.card h3{
+  font-size:21px;
+  color:#704938;
+  margin-bottom:8px;
+}
+
+.card p{
+  color:#77665e;
+  font-size:14px;
+}
+
+.about{
+  background:#f8eee8;
+  text-align:center;
+}
+
+.about p{
+  max-width:750px;
+  margin:auto;
+  font-size:17px;
+  color:#67564e;
+}
+
+.contact{
+  text-align:center;
+}
+
+.contact-box{
+  max-width:650px;
+  margin:auto;
+  background:white;
+  padding:35px;
+  border-radius:25px;
+  box-shadow:0 8px 25px rgba(90,60,45,.08);
+}
+
+.contact-box p{
+  margin:12px 0;
+}
+
+.contact-box a{
+  color:#8b5e4b;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+footer{
+  background:#4b3730;
+  color:#fff;
+  text-align:center;
+  padding:28px 15px;
+}
+
+footer span{
+  color:#f2cdb9;
+}
+
+@media(max-width:800px){
+  header{
+    padding:14px 5%;
+  }
+
+  nav a{
+    margin-right:10px;
+    font-size:13px;
+  }
+
+  .hero h1{
+    font-size:35px;
+  }
+
+  .hero p{
+    font-size:16px;
+  }
+
+  .products{
+    grid-template-columns:1fr;
+  }
+
+  section{
+    padding:55px 5%;
+  }
+
+  .title{
+    font-size:27px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">Zahracandle 🕯️</div>
+
+  <nav>
+    <a href="#home">خانه</a>
+    <a href="#products">محصولات</a>
+    <a href="#about">درباره ما</a>
+    <a href="#contact">تماس</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div>
+    <h1>شمع‌هایی برای لحظه‌های خاص ✨</h1>
+    <p>
+      شمع‌های دست‌ساز و خاص Zahracandle؛
+      مناسب برای دکور، هدیه و ساختن لحظه‌های زیبا.
+    </p>
+    <a class="button" href="#products">مشاهده محصولات</a>
+  </div>
+</section>
+
+<section id="products">
+  <h2 class="title">محصولات ما</h2>
+
+  <div class="products">
+
+    <div class="card">
+      <div class="icon">🕯️</div>
+      <h3>شمع استوانه‌ای</h3>
+      <p>شمع‌های ساده و شیک برای دکوراسیون خانه.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🌸</div>
+      <h3>شمع گل</h3>
+      <p>شمع‌های گل‌دار زیبا و مناسب هدیه.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🧸</div>
+      <h3>شمع فانتزی</h3>
+      <p>طرح‌های خاص و جذاب برای سلیقه‌های متفاوت.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🌿</div>
+      <h3>شمع معطر</h3>
+      <p>رایحه‌های دلنشین برای ایجاد فضایی آرام.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🏡</div>
+      <h3>شمع دکوراتیو</h3>
+      <p>انتخابی زیبا برای کامل کردن دکوراسیون.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">💐</div>
+      <h3>باکس گل شمعی</h3>
+      <p>ترکیبی خاص و زیبا برای هدیه دادن به عزیزان.</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="about" id="about">
+  <h2 class="title">درباره Zahracandle</h2>
+
+  <p>
+    ما در Zahracandle با عشق شمع‌های دست‌ساز و دکوراتیو
+    تولید می‌کنیم تا زیبایی و حس خوب را به خانه‌ها و لحظه‌های
+    خاص شما بیاوریم. 🌷
+    <br>
+    سفارش‌ها از شهر ساری پذیرفته می‌شوند.
+  </p>
+</section>
+
+<section class="contact" id="contact">
+  <h2 class="title">ارتباط با ما</h2>
+
+  <div class="contact-box">
+    <p>📞 تلفن و سفارش:</p>
+    <p>
+      <a href="tel:09382995895">09382995895</a>
+    </p>
+
+    <p>📷 اینستاگرام:</p>
+    <p>
+      <a href="https://instagram.com/zahracandle70" target="_blank">
+        @zahracandle70
+      </a>
+    </p>
+
+    <p>📍 ساری</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 <span>Zahracandle</span> — تمامی حقوق محفوظ است.</p>
+</footer>
+
+</body>
+  </html>
